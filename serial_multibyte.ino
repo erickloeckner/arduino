@@ -1,3 +1,6 @@
+// read multi-byte serial data. format is example is 2 int8_t vars and 2 int32_t vars
+// python command to send data: serial.Serial.write(struct.pack('<bbii', 1, 1, 1, 1))
+
 const uint8_t BUF_SIZE = 10;
 uint8_t buf[BUF_SIZE] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 uint8_t buf_i = 0;
